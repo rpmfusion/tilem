@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2017 Ben Rosser <rosser.bjr@gmail.com> -->
+<component type="desktop">
+	<id>tilem.desktop</id>
+	<metadata_license>CC0-1.0</metadata_license>
+	<project_license>GPL-3.0</project_license>
+	<name>TilEm</name>
+	<summary>Emulator and debugger for Texas Instruments Z80-based graphing calculators</summary>
+	<description>
+		<p>
+			TilEm is an emulator and debugger for Texas Instruments Z80-based
+			graphing calculators.  It can emulate any of the following calculator
+			models: TI-73, TI-73 Explorer, TI-76.fr, TI-81, TI-82, TI-82 STATS,
+			TI-82 STATS.fr, TI-83, TI-83 Plus, TI-83 Plus Silver Edition, TI-83 Plus.fr,
+			TI-84 Plus, TI-84 Plus Silver Edition, TI-84 Plus.fr, TI-85, and the TI-86.
+		</p>
+		<p>
+			TilEm fully supports all known versions of the above calculators (as
+			of 2012), and attempts to reproduce the behavior of the original
+			calculator hardware as faithfully as possible. In addition, TilEm can
+			emulate the TI-Nspire's virtual TI-84 Plus mode. This is currently
+			experimental, and some programs may not work correctly.
+		</p>
+	</description>
+	<screenshots>
+		<screenshot type="default">
+			<image>https://www.acm.jhu.edu/~bjr/fedora/rpmfusion/tilem/tilem_84plus.png</image>
+		</screenshot>
+		<screenshot>
+  			<image>https://www.acm.jhu.edu/~bjr/fedora/rpmfusion/tilem/tilem_84plus.png</image>
+		</screenshot>
+	</screenshots>
+	<url type="homepage">http://lpg.ticalc.org/prj_tilem/</url>
+	<update_contact>rosser_bjr_at_gmail.com</update_contact>
+</component>

@@ -1,0 +1,13 @@
+diff -rupN tilem-2.0/configure.ac tilem-patched/configure.ac
+--- tilem-2.0/configure.ac	2012-05-27 22:40:15.000000000 -0400
++++ tilem-patched/configure.ac	2016-10-13 21:14:28.289554456 -0400
+@@ -158,6 +158,9 @@ AC_C_INLINE
+ AC_C_RESTRICT
+ AC_TYPE_UINTPTR_T
+ 
++# Check for headers.
++AC_CHECK_LIB([m], [pow])
++
+ # Output
+ 
+ AC_CONFIG_HEADERS([config.h])
