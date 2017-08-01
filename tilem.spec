@@ -1,6 +1,6 @@
 Name:           tilem
 Version:        2.0
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        Emulator and debugger for Texas Instruments Z80-based graphing calculators
 
 License:        GPLv3+
@@ -105,6 +105,9 @@ fi
 
 
 %changelog
+* Tue Aug 01 2017 Ben Rosser <rosser.bjr@gmail.com> - 2.0-5
+- Appdata file was incorrect; same screenshot listed twice.
+
 * Mon Mar 13 2017 Ben Rosser <rosser.bjr@gmail.com> - 2.0-4
 - Change license tag to GPLv3+
 - Add desktop-database scriplets for Fedora < 25.
