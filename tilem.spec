@@ -15,7 +15,7 @@ Patch0:         tilem-ac-check-libm.patch
 
 BuildRequires:  libticonv-devel, libticalcs2-devel, libticables2-devel, libtifiles2-devel
 BuildRequires:  glib2-devel, gtk2-devel
-BuildRequires:  autoconf
+BuildRequires:  autoconf, gcc
 BuildRequires:  libappstream-glib, desktop-file-utils
 
 Requires:       hicolor-icon-theme
