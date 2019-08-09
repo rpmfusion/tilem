@@ -1,6 +1,6 @@
 Name:           tilem
 Version:        2.0
-Release:        9%{?dist}
+Release:        10%{?dist}
 Summary:        Emulator and debugger for Texas Instruments Z80-based graphing calculators
 
 License:        GPLv3+
@@ -105,6 +105,9 @@ fi
 
 
 %changelog
+* Fri Aug 09 2019 RPM Fusion Release Engineering <leigh123linux@gmail.com> - 2.0-10
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
+
 * Mon Mar 04 2019 RPM Fusion Release Engineering <leigh123linux@gmail.com> - 2.0-9
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild
 
