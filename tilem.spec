@@ -1,6 +1,6 @@
 Name:           tilem
 Version:        2.0
-Release:        19%{?dist}
+Release:        20%{?dist}
 Summary:        Emulator and debugger for Texas Instruments Z80-based graphing calculators
 
 License:        GPLv3+
@@ -12,6 +12,8 @@ Source1:        tilem.appdata.xml
 
 # Patch to add -lm to libs via autoconf.
 Patch0:         tilem-ac-check-libm.patch
+# Patch for -Werror=incompatible-pointer-type : fix type for g_new
+Patch1:         tilem-2.0-g_new-type.patch
 
 BuildRequires:  libticonv-devel, libticalcs2-devel, libticables2-devel, libtifiles2-devel
 BuildRequires:  glib2-devel, gtk2-devel
@@ -105,6 +107,9 @@ fi
 
 
 %changelog
+* Sun Oct 13 2024 Mamoru TASAKA <mtasaka@fedoraproject.org> - 2.0-20
+- Fix for -Werror=incompatible-pointer-types, fix type for g_new
+
 * Fri Aug 02 2024 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 2.0-19
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_41_Mass_Rebuild
 
