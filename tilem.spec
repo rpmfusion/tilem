@@ -1,6 +1,6 @@
 Name:           tilem
 Version:        2.0
-Release:        21%{?dist}
+Release:        22%{?dist}
 Summary:        Emulator and debugger for Texas Instruments Z80-based graphing calculators
 
 License:        GPLv3+
@@ -107,6 +107,9 @@ fi
 
 
 %changelog
+* Tue Jan 28 2025 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 2.0-22
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_42_Mass_Rebuild
+
 * Sun Oct 13 2024 Mamoru TASAKA <mtasaka@fedoraproject.org> - 2.0-21
 - Fix for -Werror=incompatible-pointer-types, fix type for g_new
 
