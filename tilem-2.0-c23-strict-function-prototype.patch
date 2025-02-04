@@ -1,0 +1,13 @@
+diff --git a/gui/macro.c b/gui/macro.c
+index c4b3794..34125e2 100644
+--- a/gui/macro.c
++++ b/gui/macro.c
+@@ -70,7 +70,7 @@ void tilem_macro_start(TilemCalcEmulator *emu) {
+ 	tilem_macro_finalize(emu->macro);
+ 
+ 	/* Then allocate a new one */	
+-	emu->macro = tilem_macro_new(emu);
++	emu->macro = tilem_macro_new();
+ }
+ 
+ /* Add an action to the macro. The action could be :

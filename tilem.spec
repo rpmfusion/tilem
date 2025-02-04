@@ -1,6 +1,6 @@
 Name:           tilem
 Version:        2.0
-Release:        22%{?dist}
+Release:        23%{?dist}
 Summary:        Emulator and debugger for Texas Instruments Z80-based graphing calculators
 
 License:        GPLv3+
@@ -14,6 +14,8 @@ Source1:        tilem.appdata.xml
 Patch0:         tilem-ac-check-libm.patch
 # Patch for -Werror=incompatible-pointer-type : fix type for g_new
 Patch1:         tilem-2.0-g_new-type.patch
+# C23: support strict function prototype
+Patch2:         tilem-2.0-c23-strict-function-prototype.patch
 
 BuildRequires:  libticonv-devel, libticalcs2-devel, libticables2-devel, libtifiles2-devel
 BuildRequires:  glib2-devel, gtk2-devel
@@ -107,6 +109,9 @@ fi
 
 
 %changelog
+* Tue Feb 04 2025 Mamoru TASAKA <mtasaka@fedoraproject.org> - 2.0-23
+- C23: support strict function prototype
+
 * Tue Jan 28 2025 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 2.0-22
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_42_Mass_Rebuild
 
